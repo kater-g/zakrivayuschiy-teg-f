@@ -1,1 +1,84 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --heart-contour: #000;
+  --heart-core: #000;
+  --heart-main-body: #000;
+  --heart-sparks: #ff0000;
+  --heart-accent: #ff0000;
+  --page-font-size: 18px;
+  --like-button-font-size: 14px;
+  --label-font-size: 14px;
+  --card-text-weight: 400;
+  --card-title-weight: 700;
+  --accent-font: "Press Start 2P";
+  --main-font: "Inter Variable";
+  --background-color: #fff;
+  --background-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --content-border: 2px solid #000;
+  --text-color: #000;
+  --accent-color: #000;
+  --color-for-mix-blend-mode: #fff;
+  --page-padding-block: 100px;
+  --flex-gap-s: 8px;
+  --flex-gap-m: 50px;
+  --flex-gam-l: 100px;
+  --content-min-block-size: 100dvb;
+  --content-min-inline-size: 320px;
+  --mobile-inline-size: 100vw;
+  --content-inline-size: clamp(23.438rem, 16.2859rem + 30.5157vw, 43.75rem);
+  --header-padding-block: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  --header-padding-inline: clamp(0.875rem, -1.4687rem + 9.9996vw, 7.531rem);
+  --header-gap: 20px;
+  --header-title-font-size: clamp(3.063rem, 2.7109rem + 1.5023vw, 4.063rem);
+  --header-title-font-size-mobile: 45px;
+  --header-subtitle-font-size: clamp(0.875rem, 0.6768rem + 0.8458vw, 1.438rem);
+  --card-title-padding-inline: 10px;
+  --card-title-padding-block: 4.6px;
+  --card-content-padding-inline: 26px;
+  --card-text-padding-block: 28px;
+  --card-text-line-height: 21px;
+  --cards-list-item-block-size: clamp(
+    46.93rem,
+    42.349rem + 21.9887vw,
+    59.94rem
+  );
+  --card-image-container-block-size: clamp(
+    22.5rem,
+    15.0352rem + 35.831vw,
+    43.7rem
+  );
+  --image-label-stroke-color: #fff;
+  --image-label-right-position: 13px;
+  --image-label-top-position: 25px;
+  --card-like-button-w: 130px;
+  --card-like-button-h: 36px;
+  --card-button-padding-block: 25px;
+  --floppy-icon-s: 28px;
+  --floppy-icon: 40px;
+  --save-button-container-inline-size: clamp(
+    19.2rem,
+    18.4958rem + 3.3803vw,
+    21.2rem
+  );
+  --save-button-container-block-size: calc(
+    8.688rem - clamp(3.438rem, 2.8rem + 2.7223vw, 5.25rem)
+  );
+  --dialog-container-w: clamp(21.313rem, 20.9831rem + 1.4077vw, 22.25rem);
+  --dialog-container-gap: 30px;
+  --dialog-content-column-gap: 20px;
+  --dialog-container-line-height: 1.5;
+  --dialog-padding-inline: 30px;
+  --dialog-padding-block: 40px;
+  --dialog-padding: 30px;
+  --dialog-backdrop-color: #000;
+  --dialog-backdrop-opacity: 0.7;
+  --dialob-ok-button-w: clamp(16.063rem, 15.2707rem + 3.3803vw, 18.313rem);
+  --dialog-ok-button-h: 38px;
+}
