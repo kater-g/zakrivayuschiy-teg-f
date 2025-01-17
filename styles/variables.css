@@ -42,7 +42,7 @@
   --card-title-padding-inline: 10px;
   --card-title-padding-block: 4.6px;
   --card-content-padding-inline: 26px;
-  --card-text-padding-block: 28px;
+  --card-text-padding-block: 25px;
   --card-text-line-height: 21px;
   --cards-list-item-block-size: clamp(
     46.93rem,
