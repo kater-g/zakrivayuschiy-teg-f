@@ -29,19 +29,29 @@
               <span class="image__label" aria-hidden="true"
                 >&lt;preparation&gt;</span
               >
-              <img
-                class="card__image filter-contrast"
-                src="./images/photo-for-post-1.jpg"
-                srcset="
-                  ./images/photo-for-post-1-375.jpg  375w,
-                  ./images/photo-for-post-1-768.jpg  768w,
-                  ./images/photo-for-post-1.jpg     1440w
-                "
-                sizes="(max-width: 375px) 371px,
-                          (max-width: 768px) 491px,
-                          (max-width: 1440px) 696px"
-                alt="Превью к первой карточке. Нулевой спринт"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo-for-post-1-320.jpg"
+                  media="(max-width: 320px)"
+                />
+                <source
+                  srcset="./images/photo-for-post-1-375.jpg"
+                  media="(max-width: 375px)"
+                />
+                <source
+                  srcset="./images/photo-for-post-1-768.jpg"
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="./images/photo-for-post-1.jpg"
+                  media="(max-width: 1440px)"
+                />
+                <img
+                  class="card__image filter-contrast"
+                  src="./images/photo-for-post-1.jpg"
+                  alt="Превью к первой карточке. Нулевой спринт"
+                />
+              </picture>
             </div>
             <div class="card__text">
               <p>
