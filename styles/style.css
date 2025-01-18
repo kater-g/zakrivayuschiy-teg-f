@@ -10,6 +10,10 @@
 
 */
 
+html {
+  font-size: var(--html-font-size-for-rem);
+}
+
 /* Обводка контента */
 .content-border {
   border: var(--content-border);
@@ -48,7 +52,7 @@
   padding-block: var(--header-padding-block);
   padding-inline: var(--header-padding-inline);
   background-color: var(--background-color);
-  font-family: var(--accent-font), monospace;
+  font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
   inline-size: var(--content-inline-size);
 }
@@ -147,7 +151,7 @@
   position: absolute;
   right: var(--image-label-right-position);
   top: var(--image-label-top-position);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: var(--label-font-size);
   mix-blend-mode: hard-light;
   text-transform: uppercase;
@@ -198,6 +202,7 @@
   padding: 0;
   border: 2px solid transparent;
   cursor: pointer;
+  transition: border 0.3s ease;
 }
 
 /* Стилизация иконки сердца */
@@ -209,7 +214,6 @@
 
 .sparks {
   opacity: 0;
-  transition: opacity 0.3s ease-in;
 }
 
 .core {
@@ -251,17 +255,17 @@
 
 .card__icon-button .like-icon.is-liked .core {
   fill: var(--heart-accent);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .card__icon-button .like-icon.is-liked .main-body {
   fill: var(--heart-accent);
-  transition: fill 0.3s 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .card__icon-button .like-icon.is-liked .contour {
   fill: var(--heart-accent);
-  transition: fill 0.3s 0.06s;
+  transition: fill 0.3s linear 0.06s;
 }
 
 /* Анимация иконки сердца */
@@ -278,10 +282,12 @@
   from {
     transform: scale(1);
     transform-origin: center;
+    transition: transform linear;
   }
   to {
     transform: scale(1.25);
     transform-origin: center;
+    transition: transform linear;
   }
 }
 
@@ -311,7 +317,6 @@
 .card__icon-button:focus-visible {
   outline: none;
   border: var(--content-border);
-  transition: border 0.5s ease-in-out;
 }
 
 .card__like-button {
@@ -369,7 +374,8 @@
   gap: var(--flex-gap-s);
   position: relative;
   padding: 0;
-  transition: box-shadow 0.3s ease-in-out;
+  background-color: var(--background-color);
+  transition: box-shadow 0.3s ease;
 }
 
 .button:focus {
@@ -443,14 +449,21 @@
 /* Медия запросы для адаптивности */
 
 @media (width <= 375px) {
+  :root {
+    --dialog-padding-inline: 25px;
+  }
   .header,
   .page__content,
-  .dialog__container {
+  .dialog__container,
+  .save__button-container {
     min-inline-size: var(--content-min-inline-size);
     inline-size: var(--mobile-inline-size);
   }
   .header__title {
     font-size: var(--header-title-font-size-mobile);
+  }
+  .dialog__container {
+    padding-inline: var(--dialog-padding-inline);
   }
 }
 
