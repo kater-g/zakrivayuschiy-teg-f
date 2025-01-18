@@ -270,11 +270,11 @@ html {
 
 /* Анимация иконки сердца */
 
-.like-icon.like-icon.is-liked .heart {
+.like-icon.is-liked .heart {
   animation: heart-transform 0.3s ease-in 1 0.1s;
 }
 
-.like-icon.like-icon.is-liked .sparks {
+.like-icon.is-liked .sparks {
   animation: sparks-sparks 0.3s ease-in 1 0.3s;
 }
 
@@ -282,12 +282,10 @@ html {
   from {
     transform: scale(1);
     transform-origin: center;
-    transition: transform linear;
   }
   to {
     transform: scale(1.25);
     transform-origin: center;
-    transition: transform linear;
   }
 }
 
