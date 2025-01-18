@@ -1,6 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
+  --html-font-size-for-rem: 16px;
   --heart-contour: #000;
   --heart-core: #000;
   --heart-main-body: #000;
@@ -37,7 +38,7 @@
   --header-padding-inline: clamp(0.875rem, -1.4687rem + 9.9996vw, 7.531rem);
   --header-gap: 20px;
   --header-title-font-size: clamp(3.063rem, 2.7109rem + 1.5023vw, 4.063rem);
-  --header-title-font-size-mobile: 45px;
+  --header-title-font-size-mobile: clamp(2.813rem, 1.3585rem + 7.2727vw, 3.063rem);
   --header-subtitle-font-size: clamp(0.875rem, 0.6768rem + 0.8458vw, 1.438rem);
   --card-title-padding-inline: 10px;
   --card-title-padding-block: 4.6px;
