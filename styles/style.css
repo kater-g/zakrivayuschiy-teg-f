@@ -418,7 +418,7 @@ html {
   flex-direction: column;
   gap: var(--dialog-container-gap);
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   text-transform: uppercase;
   line-height: var(--dialog-container-line-height);
 }
@@ -433,6 +433,7 @@ html {
   flex-direction: row;
   gap: var(--dialog-content-column-gap);
   align-items: center;
+  justify-content: center;
 }
 
 .dialog__svg-n-text_container .floppy-icon {
@@ -453,7 +454,9 @@ html {
 @media (width <= 375px) {
   :root {
     --dialog-padding-inline: 25px;
-    --save-button-container-inline-size: calc(39.25rem - clamp(19.25rem, 14.8056rem + 22.2222vw, 20rem)); 
+    --save-button-container-inline-size: calc(
+      39.25rem - clamp(19.25rem, 14.8056rem + 22.2222vw, 20rem)
+    );
   }
   .header,
   .page__content,
