@@ -429,10 +429,14 @@ html {
 }
 
 .dialog__svg-n-text_container {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  column-gap: var(--dialog-content-column-gap);
+  display: flex;
+  flex-direction: row;
+  gap: var(--dialog-content-column-gap);
   align-items: center;
+}
+
+.dialog__svg-n-text_container .floppy-icon {
+  flex-shrink: 0;
 }
 
 /* Кнопка модального окна */
@@ -449,16 +453,19 @@ html {
 @media (width <= 375px) {
   :root {
     --dialog-padding-inline: 25px;
+    --save-button-container-inline-size: calc(39.25rem - clamp(19.25rem, 14.8056rem + 22.2222vw, 20rem)); 
   }
   .header,
   .page__content,
-  .dialog__container,
-  .save__button-container {
+  .dialog__container {
     min-inline-size: var(--content-min-inline-size);
     inline-size: var(--mobile-inline-size);
   }
   .header__title {
     font-size: var(--header-title-font-size-mobile);
+  }
+  .save__button-container {
+    inline-size: var(--save-button-container-inline-size);
   }
   .dialog__container {
     padding-inline: var(--dialog-padding-inline);

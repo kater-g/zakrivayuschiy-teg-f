@@ -71,7 +71,7 @@
   --save-button-container-block-size: calc(
     8.688rem - clamp(3.438rem, 2.8rem + 2.7223vw, 5.25rem)
   );
-  --dialog-container-w: clamp(21.313rem, 20.9831rem + 1.4077vw, 22.25rem);
+  --dialog-container-w: clamp(21.313rem, 14.2789rem + 35.1704vw, 22.5rem);
   --dialog-container-gap: 30px;
   --dialog-content-column-gap: 20px;
   --dialog-container-line-height: 1.5;
